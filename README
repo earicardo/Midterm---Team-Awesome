@@ -1,0 +1,61 @@
+The Chicago Tribune has made a call to the community to refresh their site using new web technologies. Even though you all know spec work is a total sham, you've decided to give it a go anyway.
+
+The Trib is asking for two pages to be designed and developed - the home page and a single article page.
+
+* REQUIREMENTS - Common *
+
+Both pages must have a shared header, main navigation, and footer.
+
+The current logo must be retained.
+
+The navigation and footer should be simplified and given a new UI treatment.
+
+* REQUIREMENTS - Home Page *
+
+The lead story should be the primary focus. The lead story should have a photo and 3-5 sentences of copy.
+
+Of the 20+ sub-categories currently shown (Business, Health, Sports, Nation, Opinion, etc), choose the 3 most important and show only those. Each should have a photo and 3 related headlines.
+
+Current weather conditions must be displayed.
+
+The breaking news section must be displayed.
+
+* REQUIREMENTS - Single Article Page *
+
+Article title & primary photo must be displayed prominently.
+
+An aside containing supplementary content must be displayed.
+
+An additional aside containing other top stories must be displayed.
+
+A comment form must be visible, containing fields for comment, name, and email address.
+
+* REQUIREMENTS - Technical *
+
+Site must be responsive and have layouts for 320px (iPhone), 768px (iPad), and 960px+. Layouts can be liquid or rigid.
+
+At least 3 different CSS transition effects must be used.
+
+At least 1 2D or 3D transform must be used.
+
+Comment form must use local storage to remember name, and email address.
+
+At least 1 use of CSS columns (at 960px+ resolution).
+
+HTML5 forms should be used for the comment form (input types, validations, pseudo-classes).
+
+Must work in latest Chrome (17) & Firefox (10).
+
+Use of other technologies (Geolocation, Sass, CSS Animations) is optional.
+
+* RESOURCES *
+
+Store article photos in one of your teammates public folders.
+
+Small layout graphics may be kept in GitHub, but be careful not to exceed the storage quota. If in doubt, keep those in a public folder as well.
+
+* FINISH LINE *
+
+Finished projects must be in the GitHub repositories.
+
+The finished sites will be presented to a mystery judge at 5:45pm on 3/6. You will have class time that day to tie up loose ends.
