@@ -1,0 +1,53 @@
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+
+
+/* This will enforce block-level properties to HTML5 elements */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, nav, section {
+	display: block;
+}
+
+
+
+#container {
+
+}
+
+header {
+	width: 960px;
+	margin: 0 auto;
+}
+
+hgroup {
+
+}
+
+h1 {
+
+}
+
+
+nav {
+
+}
+
+article {
+
+}
+
+section {
+
+}
+
+
+
+footer {
+
+}
+
+
