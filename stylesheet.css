@@ -1,4 +1,51 @@
-@import url("grid.css");@charset "utf-8";html, body {	margin: 0px;	padding: 0px;	height: 100%;	font-family: 'Asap', 'Georgia', sans-serif;	font-size: 13px;	line-height: 1.321em;	font-color: #333;}/* This will enforce block-level properties to HTML5 elements */article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {	display: block;}#container {}header {}hgroup {}h1 {}nav {}section {}#twitterfeed {	width: 100%;	height: auto;	color: #000;	background-color: #fff;	text-align: center;}#twitterfeed a {color: #8888ff;}
+@import url("grid.css");@charset "utf-8";html, body {	margin: 0px;	padding: 0px;	height: 100%;	font-family: 'Asap', 'Georgia', sans-serif;	font-size: 13px;	line-height: 1.321em;	font-color: #333;}/* This will enforce block-level properties to HTML5 elements */article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {	display: block;}#container {}header {}hgroup {}
+h1{
+	font-size:1.3em;
+
+}
+h1.main_text {
+	font-size:1.6em;
+	margin-top:10px;}
+nav {}section {}
+
+section.newsArcticle{
+	width:585px;
+	float:left;
+	
+	}
+	
+img.nofloat{
+	float:none;
+	margin-top:15px;
+	}
+	
+label.labeltext{
+	text-align:left;
+	width:50px;
+	display:block;
+	
+	}
+form#commentForm{
+	width:30%;
+	background-color:#888;
+	border:none;
+	}
+	
+fieldset{
+	border:none;
+	}
+	
+.article_breaking{
+	width:25%;
+	float:left;
+	margin-left:15px;
+}
+
+.article_other{
+	width:25%;
+	float:left;
+	margin-left:15px;
+}#twitterfeed {	width: 100%;	height: auto;	color: #000;	background-color: #fff;	text-align: center;}#twitterfeed a {color: #8888ff;}
 
 #masthead {
 	clear: both;
