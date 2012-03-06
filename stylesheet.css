@@ -1,14 +1,14 @@
-@import url("grid.css");@charset "utf-8";html, body {	margin: 0px;	padding: 0px;	height: 100%;	font-family: 'Asap', "Georgia", sans-serif;	font-size: 13px;	line-height: 1.321em;	font-color: #333;}/* This will enforce block-level properties to HTML5 elements */article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {	display: block;}#container {}header {}hgroup {}h1 {}nav {}article {}section {}footer {}#twitterfeed {	width: 100%;	height: auto;	color: #000;	background-color: #fff;	text-align: center;}#twitterfeed a {color: #8888ff;}
+@import url("grid.css");@charset "utf-8";html, body {	margin: 0px;	padding: 0px;	height: 100%;	font-family: 'Asap', 'Georgia', sans-serif;	font-size: 13px;	line-height: 1.321em;	font-color: #333;}/* This will enforce block-level properties to HTML5 elements */article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {	display: block;}#container {}header {}hgroup {}h1 {}nav {}section {}#twitterfeed {	width: 100%;	height: auto;	color: #000;	background-color: #fff;	text-align: center;}#twitterfeed a {color: #8888ff;}
 
 #masthead {
 	clear: both;
-	padding: 5px;
+	padding: 5px 0px;
 	border-top: 3px double red;
 	border-bottom: 3px double red;
 	text-align: center;
 	height: 80px;
-	margin-left: 0;
-	margin-right: 0;
+	/*margin-left: 0;
+	margin-right: 0;*/
 	
 	background: rgb(30,65,200); /* Old browsers */
 	background: -moz-linear-gradient(-45deg, rgba(30,65,200,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6+ */
@@ -26,6 +26,7 @@
 	margin: auto;
 	text-align: center;
 	vertical-align: center;
+	line-height: 80px;
 }
 #weather {
 	display: inline-block;	font-weight: bold;	width: auto;	height: auto;
@@ -41,33 +42,77 @@
 	line-height: 80px;
 }
 #menu {	padding: 0;
-	clear: both;	border: 1px solid #BFBFBF;	height: 40px;	/*margin: 16px 0 16px;
-	vertical-align: middle;*/
-	border: 1px solid red;
-	border-bottom: 1px solid black;}#menu li {	float: left;	list-style: none;	margin-left: 4%;	line-height: 33px;
-	border: 1px solid yellow;}#menu a {	color: #333;	text-align: center;	text-decoration: none;	margin-bottom: 3px;	font-size: 16px;
-	border: 1px solid green;}#menu a:hover {	color: #900;}#menu select {	display: none;}
+	clear: both;	height: 40px;	margin-bottom: 16px;
+	border-bottom: 1px solid #000000;
+	text-align: center;}
 
-@media (min-width: 768px) {
-	#weather {
-	display: inline-block;	font-weight: bold;	width: auto;	height: auto;
-	height: 100%;	float: left;
-	color: white;
-	line-height: 84px;	}
-
-	#search {
+#menu ul {
+	margin: 0;
+	padding: 0;
+}
+#menu li {
 	display: inline-block;
-	width: auto;
+	padding: 0px 4%;
+	margin: 0px;
+	height: 40px;
+	line-height: 40px;	list-style: none;	/*margin-left: 4%;*/}#menu a {	color: #333;	text-align: center;	text-decoration: none;	/*margin-bottom: 3px;*/	font-size: 16px;}
+
+#menu li:hover {
+	background: rgb(249,249,249); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(242,242,242,1) 10%, rgba(226,226,226,1) 25%, rgba(232,232,232,1) 37%, rgba(239,239,239,1) 50%, rgba(226,226,226,1) 51%, rgba(244,244,244,1) 83%, rgba(252,252,252,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,249,249,1)), color-stop(10%,rgba(242,242,242,1)), color-stop(25%,rgba(226,226,226,1)), color-stop(37%,rgba(232,232,232,1)), color-stop(50%,rgba(239,239,239,1)), color-stop(51%,rgba(226,226,226,1)), color-stop(83%,rgba(244,244,244,1)), color-stop(100%,rgba(252,252,252,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(249,249,249,1) 0%,rgba(242,242,242,1) 10%,rgba(226,226,226,1) 25%,rgba(232,232,232,1) 37%,rgba(239,239,239,1) 50%,rgba(226,226,226,1) 51%,rgba(244,244,244,1) 83%,rgba(252,252,252,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(249,249,249,1) 0%,rgba(242,242,242,1) 10%,rgba(226,226,226,1) 25%,rgba(232,232,232,1) 37%,rgba(239,239,239,1) 50%,rgba(226,226,226,1) 51%,rgba(244,244,244,1) 83%,rgba(252,252,252,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(249,249,249,1) 0%,rgba(242,242,242,1) 10%,rgba(226,226,226,1) 25%,rgba(232,232,232,1) 37%,rgba(239,239,239,1) 50%,rgba(226,226,226,1) 51%,rgba(244,244,244,1) 83%,rgba(252,252,252,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(249,249,249,1) 0%,rgba(242,242,242,1) 10%,rgba(226,226,226,1) 25%,rgba(232,232,232,1) 37%,rgba(239,239,239,1) 50%,rgba(226,226,226,1) 51%,rgba(244,244,244,1) 83%,rgba(252,252,252,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */}
+#menu a:hover {	color: #900;
+	padding: 0;
+	/*insert gradient once I get access to it*/}#menu select {	display: none;}
+
+article {
+	padding: 2px;
+	-webkit-transition: -webkit-box-shadow 1.0s ease;
+	-moz-transition: -moz-box-shadow 1.0s ease;
+}
+
+article:hover {
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 4px 4px rgba(200, 200, 200, 0.8);
+	-moz-box-shadow: 0px 0px 4px 4px rgba(200, 200, 200, 0.8);
+	box-shadow: 0px 0px 4px 4px rgba(200, 200, 200, 0.8);
+}
+
+article a {
+	text-decoration: none;
+}
+
+article a:hover {
+	text-decoration: underline;
+}
+
+article h1 a {
+	color: #000066;
+}
+
+#pagefooter {
+	border-top: 1px solid #000000;
+}
+
+#copyright {
+	display: inline-block;
 	float: right;
 	text-align: right;
-	line-height: 84px;
-	}
 }
+
+footer ul {	float: left;
+	width: auto;}footer li {	display: inline;	margin-right: 4%;}
 
 @media (max-width: 767px) {
 	#masthead {
 		display: block;
 		height: auto;
+		line-height: normal;
 	}
 	
 	#weather {
@@ -83,4 +128,4 @@
 		line-height: normal;
 	}
 }
-@media (max-width: 480px) {	#menu {background-color: transparent;}	#menu ul { display: none; }	#menu select { display: inline-block; }}footer ul {}footer li {	display: inline;	margin-right: 4%;}
+@media (max-width: 480px) {	#menu {background-color: transparent;}	#menu ul { display: none; }	#menu select { display: inline-block; }}
