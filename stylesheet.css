@@ -5,56 +5,11 @@ h1 {
 h1.main_text {
 	font-size: 1.6em;
 	margin-top: 10px;}
-
-<<<<<<< HEAD
-section.newsArcticle{
-	width:100%;
-	float:left;
-	
-	}
 	
 img.nofloat{
 	float:none;
 	margin-top:15px;
-	}
-	
-label.labeltext{
-	text-align:left;
-	width:50px;
-	display:block;
-	
-	}
-form#commentForm{
-	width:100%;
-	background-color:#888;
-	border:none;
-	float:left;
-	margin-bottom:20px;
-	padding-bottom:20px;
-	}
-	
-fieldset{
-	border:none;
-	width:35%;
-	float:left;
-	}
-	
-fieldset#comment{
-	border:none;
-	width:55%;
-	float:left;
-	}
-
-textarea#comment{
-	width:100%;
-	height:75px;
-	}
-=======
-section.newsArcticle {
-	width: 585px;
-	float: left;
 }
->>>>>>> fa9cb19ebfe01afebe40dbab86a895de951a01e4
 	
 img.nofloat {
 	float: none;
@@ -150,6 +105,12 @@ article a {
 
 article a:hover {
 	text-decoration: underline;
+}
+
+.mainImg {
+	text-align: center;
+	float: none;
+	display: block;
 }
 
 article h1 a {
