@@ -1,1 +1,86 @@
-@import url("grid.css");@charset "utf-8";html, body {	margin:0px;	padding:0px;	height:100%;	font-family: "Georgia", sans-serif;	font-size: 13px;	line-height: 1.321em;	font-color: #333;}/* This will enforce block-level properties to HTML5 elements */article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {	display: block;}#container {}header {	/*width: 960px;	margin: 0 auto;*/}hgroup {}h1 {}nav {}article {}section {}footer {}#twitterfeed{width:100%;height:auto;color:#000;background-color:#900;text-align:center;}#twitterfeed a{color:#FFF;}#weather{font-weight: bold;/*width:auto;*/height: auto;background-color:#0CC;color:#FF3;	/*float:left;*/}#menu{	clear:both;	border: 1px solid #BFBFBF;	height: 33px;	margin: 16px 0 16px;}#menu li {	float: left;	list-style:none;	margin-left: 4%;	height: 33px;	vertical-align: middle;}#menu a {		color: #333;	text-align: center;	text-decoration: none;	margin-bottom: 3px;	font-size: 16px;}#menu a:hover {	color: #900;}#menu select {  display: none;}@media (max-width: 480px) {#menu {background-color:transparent;}  #menu ul     { display: none; }  #menu select { display: inline-block; }}footer ul {}footer li {	display: inline;	margin-right: 4%;}
+@import url("grid.css");@charset "utf-8";html, body {	margin: 0px;	padding: 0px;	height: 100%;	font-family: 'Asap', "Georgia", sans-serif;	font-size: 13px;	line-height: 1.321em;	font-color: #333;}/* This will enforce block-level properties to HTML5 elements */article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {	display: block;}#container {}header {}hgroup {}h1 {}nav {}article {}section {}footer {}#twitterfeed {	width: 100%;	height: auto;	color: #000;	background-color: #fff;	text-align: center;}#twitterfeed a {color: #8888ff;}
+
+#masthead {
+	clear: both;
+	padding: 5px;
+	border-top: 3px double red;
+	border-bottom: 3px double red;
+	text-align: center;
+	height: 80px;
+	margin-left: 0;
+	margin-right: 0;
+	
+	background: rgb(30,65,200); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(30,65,200,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(30,65,200,1)), color-stop(50%,rgba(41,137,216,1)), color-stop(51%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, rgba(30,65,200,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, rgba(30,65,200,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, rgba(30,65,200,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* IE10+ */
+	background: linear-gradient(-45deg, rgba(30,65,200,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e41c8', endColorstr='#7db9e8', GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#paperName {
+	float: none;
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+	vertical-align: center;
+}
+#weather {
+	display: inline-block;	font-weight: bold;	width: auto;	height: auto;
+	height: 100%;	float: left;
+	color: white;
+	line-height: 80px;}
+
+#search {
+	display: inline-block;
+	width: auto;
+	float: right;
+	text-align: right;
+	line-height: 80px;
+}
+#menu {	padding: 0;
+	clear: both;	border: 1px solid #BFBFBF;	height: 40px;	/*margin: 16px 0 16px;
+	vertical-align: middle;*/
+	border: 1px solid red;
+	border-bottom: 1px solid black;}#menu li {	float: left;	list-style: none;	margin-left: 4%;	line-height: 33px;
+	border: 1px solid yellow;}#menu a {	color: #333;	text-align: center;	text-decoration: none;	margin-bottom: 3px;	font-size: 16px;
+	border: 1px solid green;}#menu a:hover {	color: #900;}#menu select {	display: none;}
+
+@media (min-width: 768px) {
+	#weather {
+	display: inline-block;	font-weight: bold;	width: auto;	height: auto;
+	height: 100%;	float: left;
+	color: white;
+	line-height: 84px;	}
+
+	#search {
+	display: inline-block;
+	width: auto;
+	float: right;
+	text-align: right;
+	line-height: 84px;
+	}
+}
+
+@media (max-width: 767px) {
+	#masthead {
+		display: block;
+		height: auto;
+	}
+	
+	#weather {
+		float: none;
+		display: block;
+		line-height: normal;
+	}
+	
+	#search {
+		float: none;
+		display: block;
+		text-align: center;
+		line-height: normal;
+	}
+}
+@media (max-width: 480px) {	#menu {background-color: transparent;}	#menu ul { display: none; }	#menu select { display: inline-block; }}footer ul {}footer li {	display: inline;	margin-right: 4%;}
