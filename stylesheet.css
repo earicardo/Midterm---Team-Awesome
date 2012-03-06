@@ -144,6 +144,20 @@ article h1 a:visited {
 	color: #5500cc;
 }
 
+.articleAuthor {
+	font-size: 1.1em;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+}
+
+.articleDate {
+	font-size: 1.0em;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
 #pagefooter {
 	border-top: 1px solid #000000;
 }
