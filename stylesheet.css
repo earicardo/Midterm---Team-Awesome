@@ -1,99 +1,1 @@
-@charset "utf-8";
-
-html, body {
-	margin:0px;
-	padding:0px;
-	height:100%;
-}
-
-
-
-/* This will enforce block-level properties to HTML5 elements */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, nav, section {
-	display: block;
-}
-
-
-
-#container {
-
-}
-
-header {
-	width: 960px;
-	margin: 0 auto;
-}
-
-hgroup {
-
-}
-
-h1 {
-
-}
-
-
-nav {
-
-}
-
-article {
-
-}
-
-section {
-
-}
-
-
-
-footer {
-
-}
-
-#twitterfeed{
-width:100%;
-height:auto;
-color:#000;
-background-color:#900;
-text-align:center;
-}
-
-#twitterfeed a{color:#FFF;}
-
-
-#weather{
-font-weight:bolder;
-width:auto;
-height:auto;
-background-color:#0CC;
-color:#FF3;
-	float:left;
-}
-
-#menu{
-	clear:both;
-	background-color:#3C6;
-	width:600px;
-	height:auto;
-}
-
-
-#menu ul li{
-float:left;
-list-style:none;
-margin-left:10px;
-}
-
-
-
-#menu select {
-  display: none;
-}
-
-@media (max-width: 480px) {
-#menu {background-color:transparent;}
-  #menu ul     { display: none; }
-  #menu select { display: inline-block; }
-}
+@import url("grid.css");@charset "utf-8";html, body {	margin:0px;	padding:0px;	height:100%;	font-family: "Georgia", sans-serif;	font-size: 13px;	line-height: 1.321em;	font-color: #333;}/* This will enforce block-level properties to HTML5 elements */article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {	display: block;}#container {}header {	/*width: 960px;	margin: 0 auto;*/}hgroup {}h1 {}nav {}article {}section {}footer {}#twitterfeed{width:100%;height:auto;color:#000;background-color:#900;text-align:center;}#twitterfeed a{color:#FFF;}#weather{font-weight: bold;/*width:auto;*/height: auto;background-color:#0CC;color:#FF3;	/*float:left;*/}#menu{	clear:both;	border: 1px solid #BFBFBF;	height: 33px;	margin: 16px 0 16px;}#menu li {	float: left;	list-style:none;	margin-left: 4%;	height: 33px;	vertical-align: middle;}#menu a {		color: #333;	text-align: center;	text-decoration: none;	margin-bottom: 3px;	font-size: 16px;}#menu a:hover {	color: #900;}#menu select {  display: none;}@media (max-width: 480px) {#menu {background-color:transparent;}  #menu ul     { display: none; }  #menu select { display: inline-block; }}footer ul {}footer li {	display: inline;	margin-right: 4%;}
