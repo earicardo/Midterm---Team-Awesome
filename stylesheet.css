@@ -90,7 +90,11 @@ article a:hover {
 }
 
 article h1 a {
-	color: #000066;
+	color: #000099;
+}
+
+article h1 a:visited {
+	color: #5500cc;
 }
 
 #pagefooter {
