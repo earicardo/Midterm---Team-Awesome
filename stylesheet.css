@@ -7,8 +7,6 @@
 	border-bottom: 3px double red;
 	text-align: center;
 	height: 80px;
-	/*margin-left: 0;
-	margin-right: 0;*/
 	
 	background: rgb(30,65,200); /* Old browsers */
 	background: -moz-linear-gradient(-45deg, rgba(30,65,200,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6+ */
@@ -55,7 +53,7 @@
 	padding: 0px 4%;
 	margin: 0px;
 	height: 40px;
-	line-height: 40px;	list-style: none;	/*margin-left: 4%;*/}#menu a {	color: #333;	text-align: center;	text-decoration: none;	/*margin-bottom: 3px;*/	font-size: 16px;}
+	line-height: 40px;	list-style: none;}#menu a {	color: #333;	text-align: center;	text-decoration: none;	font-size: 16px;}
 
 #menu li:hover {
 	background: rgb(249,249,249); /* Old browsers */
@@ -67,13 +65,12 @@
 	background: linear-gradient(top, rgba(249,249,249,1) 0%,rgba(242,242,242,1) 10%,rgba(226,226,226,1) 25%,rgba(232,232,232,1) 37%,rgba(239,239,239,1) 50%,rgba(226,226,226,1) 51%,rgba(244,244,244,1) 83%,rgba(252,252,252,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */}
 #menu a:hover {	color: #900;
-	padding: 0;
-	/*insert gradient once I get access to it*/}#menu select {	display: none;}
+	padding: 0;}#menu select {	display: none;}
 
 article {
 	padding: 2px;
-	-webkit-transition: -webkit-box-shadow 1.0s ease;
-	-moz-transition: -moz-box-shadow 1.0s ease;
+	-webkit-transition: background 0.7s ease, -webkit-box-shadow 1.5s ease;
+	-moz-transition: background 0.7s ease, -moz-box-shadow 1.5s ease;
 }
 
 article:hover {
